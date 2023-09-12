@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Додаток для спорту</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Виберіть ваш вік:</h1>
+    <div class="age-groups">
+      <div class="age-group">
+        <img
+          src="image/madmuscles.com by html.to.design ❤️ FREE version - 12/09/image.png"
+          alt="18-29"
+        />
+        <p class="age">18-29</p>
+      </div>
+      <div class="age-group">
+        <img
+          src="image/madmuscles.com by html.to.design ❤️ FREE version - 12/09/image-1.png"
+          alt="30-39"
+        />
+        <p class="age">30-39</p>
+      </div>
+      <div class="age-group">
+        <img
+          src="image/madmuscles.com by html.to.design ❤️ FREE version - 12/09/image-2.png"
+          alt="40-49"
+        />
+        <p class="age">40-49</p>
+      </div>
+      <div class="age-group">
+        <img
+          src="image/madmuscles.com by html.to.design ❤️ FREE version - 12/09/image-3.png"
+          alt="50+"
+        />
+        <p class="age">50+</p>
+      </div>
+    </div>
+    <!-- Модальні вікна для кожної вікової категорії -->
+    <div id="age-modal-18-29" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('age-modal-18-29')"
+          >&times;</span
+        >
+        <h2>Ваша програма тренувань 
+       </h2> 
+       <p>на три дня в неделю</p>
+            
+            
+
+         <table>
+        <thead>
+            <tr>
+                <th>День</th>
+                <th>Тренування</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>День 1</td>
+                <td>
+                    <ul>
+                        <li>Жим лежа 3x10</li>
+                        <li>Разведение гантелей лежа 3x10</li>
+                        <li>Французский жим лежа 3x10</li>
+                        <li>Подтягивания на брусьях 3x10</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>День 2</td>
+                <td>Отдых</td>
+            </tr>
+            <tr>
+                <td>День 3</td>
+                <td>
+                    <ul>
+                        <li>Подтягивание на турнике 3x10</li>
+                        <li>Тяга нижнего блока 3x10</li>
+                        <li>Подъем штанги или гантелей на бицепс 3x10</li>
+                        <li>Тяга верхнего блока 3x10</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>День 4</td>
+                <td>Отдых</td>
+            </tr>
+            <tr>
+                <td>День 5</td>
+                <td>
+                    <ul>
+                        <li>Присед 4x15</li>
+                        <li>Сгибание и разгибание ног на тренажере 3x12</li>
+                        <li>Скручивания 3x15</li>
+                        <li>Подъем ног в висе 3x10</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>День 6,7</td>
+                <td>Отдых</td>
+            </tr>
+        </tbody>
+    </table>
+
+        </p>
+      </div>
+    </div>
+    <div id="age-modal-30-39" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('age-modal-30-39')"
+          >&times;</span
+        >
+        Тут ваша програма тренувань для віку 30-39 років
+        <p>
+          Це просто приклад тексту для вікна. Можете додати будь-який зміст
+          сюди.
+        </p>
+      </div>
+    </div>
+    <div id="age-modal-40-49" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('age-modal-40-49')"
+          >&times;</span
+        >
+        <h2>Ваша програма тренувань</h2>
+        <p>на два дня в неделю</p>
+        <p>понеділок-четверг або вівторок-п'ятниця</p>
+
+        <table border="1">
+          <thead>
+            <tr>
+              <th>№</th>
+              <th>Упражнение</th>
+              <th>Количество</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td  class="exercise-row" data-image=".\image\img\stock-photo-sportsmen-running-on-treadmills.jpg">Кардио разминка</td>
+              <td>15 минут</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Подъем корпуса на пресс лежа на спине</td>
+              <td>25 раз</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Жим грифа штанги лежа</td>
+              <td>20 раз</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Подтягивание в гравитроне</td>
+              <td>8-10 раз</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Присед со штангой (грифом) на плечах</td>
+              <td>20 раз</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Жим гантелей сидя вверх</td>
+              <td>12 раз</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Становая тяга</td>
+              <td>10-15 раз</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>Подъем на носки в тренажере</td>
+              <td>20 раз</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Французский жим лежа на скамье</td>
+              <td>10-12 раз</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>Подъем z-грифа штанги на бицепс</td>
+              <td>10-12 раз</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>Кардио пробежка</td>
+              <td>10 минут</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="age-modal-50" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('age-modal-50')">&times;</span>
+        Тут ваша програма тренувань для віку 50+ років
+        <p>
+          Це просто приклад тексту для вікна. Можете додати будь-який зміст
+          сюди.
+        </p>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
+  </body>
+</html>
