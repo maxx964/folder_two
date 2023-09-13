@@ -42,3 +42,5 @@ exerciseRows.forEach((row) => {
         }
     });
 });
+
+

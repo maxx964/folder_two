@@ -10,10 +10,18 @@ header{
     background-color: crimson;
 }
 
-h1 {
- 
-    margin-top: 20px;
+/* Стилі для тексту "Виберіть свій вік" */
+.age-selector-text {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 15px;
+  
+    border-radius: 10px;
     font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
+  
 }
 
 /* Стилі для зображень у модальних вікнах */
@@ -38,9 +46,9 @@ h1 {
 .age-group {
     margin: 10px;
     padding: 10px;
-    background-color: #cfcdcd;
+    background-color: #f3f152;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
     text-align: center;
     width: 90%;
     max-width: 300px;
@@ -84,13 +92,18 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 10px;
+    padding: 20px;
+    /* Збільшити відступи */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    /* Збільшити максимальну ширину */
+    width: 500px;
+    /* Задайте фіксовану ширину, якщо потрібно */
     max-height: 80%;
     overflow-y: auto;
+    text-align: center;
 }
-
 .close {
     position: absolute;
     top: 10px;
@@ -147,3 +160,58 @@ h1 {
     
    }
   
+
+
+/* Стилі для GIF-контейнера */
+.gif-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 6, 20, 0.8);
+    /* Прозорий фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    /* Встановіть вищий індекс, щоб забезпечити появу поверх основного контенту */
+    opacity: 0;
+    /* Початкова прозорість 0 */
+    transition: opacity 1s ease-in-out;
+    /* Плавний перехід прозорості з тривалістю 1 секунда */
+}
+
+.gif-container.show {
+    opacity: 1;
+    /* Прозорість 1 при показі GIF */
+}
+
+.gif-container img {
+    width: 100%;
+ 
+    height: 65vh;
+
+    border-radius: 10px;
+}
+
+.gif-caption {
+    position: absolute;
+    /* bottom: 20px; */
+    /* Відстань від нижнього краю */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    transition: opacity 1s ease-in-out;
+    /* Плавний перехід прозорості з тривалістю 1 секунда */
+}
+
+/* Застосовуємо стилі до тексту, коли .gif-container має клас show */
+.gif-container.show .gif-caption {
+    opacity: 1;
+    /* Прозорість 1 при показі GIF */
+}
