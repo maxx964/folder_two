@@ -1,10 +1,13 @@
+/* Сучасні стилі для body */
 body {
     font-family: 'Finlandica', sans-serif;
-    background-color: #88d4f3;
+    background-color: #f0f0f0;
+    /* Змінено колір фону */
     text-align: center;
     margin: 0;
     padding: 0;
-    border: solid 2px black;
+    border: none;
+    /* Видалено границю */
 }
 header{
     background-color: crimson;
@@ -20,7 +23,7 @@ header{
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
-box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
+/* box-shadow: 2px 3px 8px 1px rgb(45, 45, 45); */
   
 }
 
@@ -214,4 +217,21 @@ box-shadow: 2px 3px 8px 1px rgb(45, 45, 45);
 .gif-container.show .gif-caption {
     opacity: 1;
     /* Прозорість 1 при показі GIF */
+}
+
+
+/* Стилі для кнопки "Почати тренування" */
+.start-workout-button-three {
+    background-color: #3358ff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.start-workout-button:hover {
+    background-color: #0015ff;
 }

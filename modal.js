@@ -44,3 +44,4 @@ exerciseRows.forEach((row) => {
 });
 
 
+
