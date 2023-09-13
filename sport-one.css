@@ -9,7 +9,7 @@ body {
     border: none;
     /* Видалено границю */
 }#exercise-list-2 {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(18, 17, 17);
 }
 
@@ -25,4 +25,8 @@ body {
     font-size: 18px;
     color: #622e2e;
     margin-top: 20px;
+    margin-bottom: 15px;
 }
+
+
+
