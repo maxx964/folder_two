@@ -103,6 +103,8 @@ function showModal(text) {
 }
 
 
+
+
 // Отримати всі чекбокси
 const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 

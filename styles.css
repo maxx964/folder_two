@@ -221,7 +221,8 @@ header{
 
 
 /* Стилі для кнопки "Почати тренування" */
-.start-workout-button-three {
+.start-workout-button-three,
+.start-workout-button-one {
     background-color: #3358ff;
     color: #fff;
     font-size: 18px;
