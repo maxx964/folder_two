@@ -84,7 +84,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-height: 80%;
@@ -125,7 +125,14 @@ h1 {
        border: 1px solid #ddd;
        padding: 8px;
        text-align: left;
+      
    }
+
+    
+        table td:hover{
+            color: #3358ff;
+            cursor: pointer;
+        }
 
    table th {
        background-color: #f2f2f2;
@@ -137,4 +144,6 @@ h1 {
 
    table tr:hover {
        background-color: #ddd;
+    
    }
+  
